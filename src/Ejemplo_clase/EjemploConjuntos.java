@@ -35,5 +35,20 @@ public class EjemploConjuntos {
 
         conjunto.remove(s);
         System.out.println(conjunto);
+
+        //Prueba método constaintAll
+        HashSet<Integer> numbers = new HashSet<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        System.out.println("HashSet1: " + numbers);
+
+        HashSet<Integer> primeNumbers = new HashSet<>();
+        primeNumbers.add(2);
+        primeNumbers.add(3);
+        System.out.println("HashSet2: " + primeNumbers);
+
+        System.out.println(numbers.containsAll(primeNumbers));
     }
 }
