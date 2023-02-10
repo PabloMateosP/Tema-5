@@ -7,7 +7,10 @@ import java.util.Set;
 
 public class EjemploLinkedHashSet {
     public static void main(String[] args) {
-        Set <String> conjunto2 = new LinkedHashSet<>(); //Mediante el linked te lo ordena según introducción ej: este caso
+        Set <String> conjunto2 = new LinkedHashSet<>();
+
+        //Mediante el linked te lo ordena según tiempo de inserción como se ve en la impresión de este caso
+
         conjunto2.add("Samuel");
         conjunto2.add("Alex Salas");
         conjunto2.add("Manolo");
