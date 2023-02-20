@@ -24,6 +24,7 @@ public class EjemploListaNumeros {
                 it.remove();
             }
         }
+
         System.out.println(numeros);
         while(it.hasPrevious()){
             Integer o = it.previous();

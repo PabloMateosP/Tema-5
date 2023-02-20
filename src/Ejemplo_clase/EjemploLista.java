@@ -34,7 +34,8 @@ public class EjemploLista {
         cars.remove("Seat");
         System.out.println(cars);
 
-        cars.set(2, "Ferrirri"); //Con el set nos cambia lo que se encuentra en el número de ese indice por el string que introduzcamos
+        cars.set(2, "Ferrirri");
+        //Con el set nos cambia lo que se encuentra en el número de ese indice por el string que introduzcamos
         System.out.println(cars);
 
         cars.removeAll(cars);
