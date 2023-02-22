@@ -1,5 +1,6 @@
 package Ejemplo_clase;
 
+
 import java.util.*;
 
 //  22-02-2023
@@ -71,7 +72,7 @@ public class EjemploMap {
         //Con el método putAll podemos coger los valores de otro mapa e introducirlo en el nuevo
         System.out.println(b.values());
 
-        Map <Integer, String> c = new TreeMap<>();
+        TreeMap <Integer, String> c = new TreeMap<>();
         c.put(5, "Suficiente");
         c.put(6, "Bien");
         c.put(7, "Notable Bajo");
@@ -81,7 +82,10 @@ public class EjemploMap {
 
         System.out.println(c.values());
 
+        System.out.println(c.get(c.firstKey()));
 
+        //Obtener el elemento que está justo después de "Notable bajo"
+        System.out.println(c.higherEntry(7));
 
     }
 }
