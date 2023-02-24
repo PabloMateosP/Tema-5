@@ -1,5 +1,7 @@
 package Ejemplo_clase;
 
+import Actividades.ComparadorPorEdad;
+
 import java.util.TreeSet;
 
 public class EjemploComparable {

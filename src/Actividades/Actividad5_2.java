@@ -1,7 +1,10 @@
 package Actividades;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
+import static Actividades.TaskList.*;
 
 public class Actividad5_2 {
     public static void main(String[] args) {
@@ -21,24 +24,14 @@ public class Actividad5_2 {
         borrarTarea(tareas, tareaBorrar);
         System.out.println(tareas);
 
+        System.out.println(" ");
+
         String tareaCompletada = "Tarea 6";
         marcarCompletada(tareas, tareaCompletada);
         System.out.println(tareas);
-    }
-    static List<String> agregarTarea (List<String> tareas, String nuevaTarea){
 
-        tareas.add(nuevaTarea);
-        return tareas;
-    }
+        System.out.println(" ");
 
-    static List<String> borrarTarea (List<String> tareas, String tareaBorrar){
-        tareas.remove(tareaBorrar);
-        return tareas;
-    }
-
-    static List<String> marcarCompletada (List<String> tareas, String tareaCompletada){
-        System.out.println("La tarea: " + tareaCompletada + " ha sido completada.");
-        tareas.remove(tareaCompletada);
-        return tareas;
+        getTasks(tareas);
     }
 }

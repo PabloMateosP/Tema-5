@@ -1,4 +1,6 @@
-package Ejemplo_clase;
+package Actividades;
+import Ejemplo_clase.Persona2;
+
 import java.util.Comparator;
 public class ComparadorPorEdad implements Comparator {
     @Override
