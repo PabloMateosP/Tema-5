@@ -1,9 +1,7 @@
 package Actividades;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
 import static Actividades.TaskList.*;
 
 public class Actividad5_2 {

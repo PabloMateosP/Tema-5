@@ -5,9 +5,8 @@ import java.util.TreeMap;
 
 public class Actividad5_3 {
     public static void main(String[] args) {
-        int[] numeros = {5, 2, 8, 3, 5, 2, 1, 8, 8, 2, 5, 3};
+        int[] numeros = {1, 2, 14, 4, 5, 2, 1, 14, 14, 4, 6, 2, 5, 3};
 
-        // Crea un objeto Map para contar los números
         Map<Integer, Integer> contador = new TreeMap<>();
 
         // Itera sobre el array de números
