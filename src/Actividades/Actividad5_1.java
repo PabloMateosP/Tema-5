@@ -17,6 +17,5 @@ public class Actividad5_1 {
 
         System.out.println(Personas);
 
-
     }
 }

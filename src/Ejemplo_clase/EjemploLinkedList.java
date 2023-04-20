@@ -17,6 +17,7 @@ public class EjemploLinkedList {
         numeros.add(52);
 
 
+
         List<Integer> linkedlist = new LinkedList<>(numeros);
         linkedlist.add(7);
         linkedlist.add(78);
@@ -38,7 +39,7 @@ public class EjemploLinkedList {
         System.out.println(linkedlist.indexOf(22));
         //Eliminamos ese elemento 22
         linkedlist.remove(4);
-        // -- Podemos borrar un elemento mediate el índice en el que se encuentra
+        // -- Podemos borrar un elemento mediante el índice en el que se encuentra
         // -- Mediante el método index of veremos donde se encuentra ese elemento para poder borrarlo
         // -- Mediante el método contains podemos ver después del borrado como no se encuentra el elemento
         System.out.println(linkedlist);

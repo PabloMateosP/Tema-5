@@ -2,6 +2,8 @@ package Practica;
 
 import java.util.Stack;
 
+import static Practica.Pila.*;
+
 public class PilaProductos {
     public static void main(String[] args) {
         //Nos situaremos en el hecho de que somos una empresa la cual vendemos baterías recargables, siempre en constante
@@ -19,28 +21,15 @@ public class PilaProductos {
         productos.push("Bateria0.6");
         productos.push("Bateria0.7");
 
+        String bateria = "Bateria0.8";
+
+        apilar(productos, bateria);
+        desapilar(productos, bateria);
+        cima(productos);
+        limpiar(productos);
+        esVacia(productos);
         longitud(productos);
+
     }
-    static void apilar (Stack<String> productos, String nuevoProducto){
-        productos.push(nuevoProducto);
-    }
-    static void desapilar (Stack<String> productos, String productoEliminado){
-        productos.remove(productoEliminado);
-    }
-    static void cima (Stack<String> productos){
-        System.out.println(productos.get(0));
-    }
-    static void limpiar (Stack<String> productos){
-        productos.pop();
-    }
-    static void esVacia (Stack<String> productos){
-        if (productos.size() == 0){
-            System.out.println("La pila está vacía.");
-        } else {
-            System.out.println("La pila no está vacía.");
-        }
-    }
-    static void longitud (Stack<String> productos){
-        System.out.println(productos.size());
-    }
+
 }

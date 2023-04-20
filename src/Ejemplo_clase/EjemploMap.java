@@ -50,10 +50,10 @@ public class EjemploMap {
             System.out.println(aListIterator.next());
         }
 
-        //Con el método isEmpty vemos si nuestro mapa está vacio o no
+        //Con el método isEmpty vemos si nuestro mapa está vacío o no
         System.out.println(a.isEmpty());
 
-        //Con el .size vemos el tamaño de nuestro mapa
+        //Con él .size vemos el tamaño de nuestro mapa
         System.out.println(a.size());
 
         a.put(null, "Z");
