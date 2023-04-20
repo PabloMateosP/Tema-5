@@ -9,12 +9,11 @@ public class Cola {
         return cola;
     }
     static List <Integer> desencolar (List <Integer> cola, Integer clienteDespachado){
-        cola.remove(clienteDespachado);
+        cola.remove(cola.get(0));
         return cola;
     }
-    static List <Integer> frente (List <Integer> cola){
-        System.out.println(cola.get(0));
-        return cola;
+    static Integer frente (List <Integer> cola){
+        return cola.get(0);
     }
     static List <Integer> resto (List <Integer> cola){
         //Creamos una copia de la cola original para así no afectarla. Entonces el primer puesto de la copia de nuestra
@@ -22,12 +21,10 @@ public class Cola {
         List<Integer> copiaCola = new ArrayList<>();
         copiaCola.addAll(cola);
         copiaCola.remove(0);
-        System.out.println(copiaCola);
-        return cola;
+        return copiaCola;
     }
-    static List <Integer> limpiar (List <Integer> cola){
+    static void limpiar (List <Integer> cola){
         cola.clear();
-        return cola;
     }
     static List <Integer> esVaciar (List <Integer> cola){
         if (cola.size() == 0){
@@ -37,8 +34,7 @@ public class Cola {
         }
         return cola;
     }
-    static List <Integer> longitud (List <Integer> cola){
-        System.out.println("El tamaño de la cola es de: " + cola.size() + " cliente.");
-        return cola;
+    static Integer longitud (List <Integer> cola){
+        return cola.size();
     }
 }

@@ -1,6 +1,7 @@
 package Practica;
 
 import java.util.Stack;
+//Todo: hacer una clase pila como tal y cambiar el tipo de stack a likedlist
 
 public class Pila {
     static void apilar (Stack<String> productos, String nuevoProducto){
