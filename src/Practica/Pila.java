@@ -1,29 +1,40 @@
 package Practica;
 
-import java.util.Stack;
-//Todo: hacer una clase pila como tal y cambiar el tipo de stack a likedlist
+import java.util.Stack; //Cambiamos de la clase stack a likedlist
+//Todo: hacer una clase pila como tal y cambiar el tipo de stack a likedlist: -- Hecho
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class Pila {
-    static void apilar (Stack<String> productos, String nuevoProducto){
-        productos.push(nuevoProducto);
+    private List<String> pila = new LinkedList<String>();
+
+    public void apilar(String persona){
+        pila.add(persona);
     }
-    static void desapilar (Stack<String> productos, String productoEliminado){
-        productos.remove(productoEliminado);
+
+    public void desapilar(){
+        pila.remove(pila.size() - 1);
     }
-    static void cima (Stack<String> productos){
-        System.out.println(productos.get(0));
+
+    public String cima(){
+        return (pila.get(pila.size() - 1));
     }
-    static void limpiar (Stack<String> productos){
-        productos.pop();
+
+    public void limpiar(){
+        pila.clear();
     }
-    static void esVacia (Stack<String> productos){
-        if (productos.size() == 0){
-            System.out.println("La pila está vacía.");
-        } else {
-            System.out.println("La pila no está vacía.");
-        }
+
+    public boolean esVacia(){
+        return pila.isEmpty();
     }
-    static void longitud (Stack<String> productos){
-        System.out.println(productos.size());
+
+    public int longitud(){
+        return (pila.size());
+    }
+
+    @Override
+    public String toString() {
+        return pila.toString();
     }
 }

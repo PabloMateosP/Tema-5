@@ -20,8 +20,8 @@ public class ColaCarniceria {
         cola.add(5);
         cola.add(6);
 
-        encolar(cola, 6);
-        desencolar(cola, 5);
+        encolar(cola, 7);
+        desencolar(cola);
         frente(cola);
         limpiar(cola);
         esVaciar(cola);
